@@ -1,0 +1,23 @@
+<!-- <p>row-data works!</p> -->
+<table class="table  table-bordered  table-hover ">
+    <thead class="thead-light">
+        <tr>
+            <th>
+                Type
+            </th>
+            <th>
+                Value
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ele of state_data">
+            <td>
+                {{ele.name}}
+            </td>
+            <td>
+                {{ele?.value || 0.0}}
+            </td>
+        </tr>
+    </tbody>
+</table>

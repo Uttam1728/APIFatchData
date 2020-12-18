@@ -1,0 +1,20 @@
+<!-- <p>chart-data works!</p> -->
+
+<div #containerRef>
+
+    <ngx-charts-bar-vertical 
+        [view]="[containerRef.offsetWidth,containerRef.offsetWidth]" 
+        [scheme]="colorScheme"
+        [results]="state_data" 
+        [gradient]="gradient" 
+        [xAxis]="showXAxis" 
+        [yAxis]="showYAxis" 
+        [legend]="showLegend"
+        [showXAxisLabel]="showXAxisLabel" 
+        [showYAxisLabel]="showYAxisLabel" 
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel">
+
+    </ngx-charts-bar-vertical>
+
+</div>
